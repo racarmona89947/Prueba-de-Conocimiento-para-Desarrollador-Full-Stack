@@ -1,0 +1,15 @@
+Recordatorio importante:
+Todos los archivos PHP del backend (como config.php y items.php) deben guardarse dentro de la carpeta htdocs de XAMPP.
+
+Ejemplo en Windows:
+
+C:\xampp\htdocs\prueba_api\
+    ├─ config.php
+    └─ items.php
+
+
+Así, cuando abras el navegador, podrás acceder con:
+
+http://localhost/prueba_api/items.php
+
+Si se dejan fuera de htdocs, Apache no podrá ejecutarlos.

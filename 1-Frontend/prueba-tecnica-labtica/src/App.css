@@ -1,0 +1,139 @@
+/*  VARIABLES GLOBALES DE COLOR */
+:root{
+  --bg:#d3d0d097;
+  background-image: url("assets/10-útiles-escolares-que-no-pueden-faltar-en-la-mochila-3-1.jpg");   /* Fondo general de la página */
+  --card:#fff;      /* Fondo de las tarjetas (formularios, listas) */
+  --accent:#2b6cb0; /* Color principal para botones o elementos destacados */
+  --danger:#e53e3e; /* Color de error o acciones peligrosas (eliminar) */
+  --muted:#000000;  /* Texto secundario, más tenue */
+}
+
+/*  RESET Y CONFIGURACIÓN GLOBAL */
+*{box-sizing:border-box} /* Hace que el padding y border se incluyan en el ancho/alto total */
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,Arial; /* Tipografía base */
+  background:var(--bg);  /* Fondo gris claro */
+  color:#111;            /* Texto principal en color oscuro */
+}
+.container{
+  max-width:90%;   /* El contenido no ocupa todo el ancho */
+  margin:auto auto;
+  padding:16px;
+}
+
+/*  CABECERA */
+header{
+  display:flex;
+  flex-direction:column;
+  background-color: #ffffff;
+  border-radius: 20px;
+  width: 30%;
+  margin: 20px auto;
+  padding: 10px;
+  gap:4px;            /* Espaciado entre elementos internos */
+  margin-bottom:16px; /* Separación con el contenido */
+  text-align: center; /* Texto centrado */
+}
+h1{margin:0;font-size:1.6rem}  /* Título principal */
+h2{text-align: center;}         /* Subtítulo centrado */
+.subtitle{
+  margin:0;
+  color:var(--muted); /* Texto más tenue debajo del título */
+}
+
+/*  ESTRUCTURA PRINCIPAL */
+main{
+  display:grid;
+  grid-template-columns:1fr 1fr; /* Dos columnas iguales */
+  gap:18px; /* Separación entre columnas */
+}
+
+/*  TARJETAS (formulario y lista) */
+.form-section, .list-section{
+  background:var(--card); /* Fondo blanco */
+  padding:10px;
+  border-radius:10px; /* Bordes redondeados */
+  box-shadow:0 6px 18px rgba(15,23,42,0.06); /* Sombra suave */
+}
+
+/*  GRUPOS DE FORMULARIO */
+.form-group{
+  display:flex;
+  flex-direction:column;
+  margin-bottom:12px;
+}
+.form-group label{
+  font-weight:600;
+  margin-bottom:6px;
+}
+.form-group input, .form-group textarea{
+  padding:10px;
+  border:1px solid #d1d5db;
+  border-radius:8px;
+  font-size:0.95rem;
+}
+.form-group textarea{
+  min-height:90px;
+  resize:vertical; /* Se puede redimensionar solo en altura */
+}
+
+/*  BOTONES */
+.buttons{display:flex;gap:8px;align-items:center;font-weight: bold;}
+.item-actions{display:flex;gap:8px;align-items:center;}
+
+.btn{
+  padding:8px 12px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  background:#eee;
+  font-weight: bold;
+}
+.btn.primary{background:var(--accent);color:#fff;font-weight: bold; } /* Botón principal */
+.btn.small{padding:6px 8px;font-size:0.9rem;font-weight: bold;}      /* Botón más pequeño */
+.btn.danger{background:var(--danger);color:#fff;font-weight: bold;}  /* Botón eliminar */
+.error{
+  color:var(--danger);
+  font-size:0.85rem;
+  margin-top:6px;
+  font-weight: bold;
+}
+
+/*  LISTA DE ELEMENTOS */
+.items{
+  list-style:none;
+  padding:0;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+.item{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #eef2f7;
+}
+.item-main strong{display:block}           /* Título de cada item */
+.item-main .desc{
+  margin:6px 0 0;
+  color:var(--muted); /* Descripción con tono tenue */
+}
+
+/*  PIE DE PÁGINA */
+footer{
+  margin-top:18px;
+  text-align:center;
+  color:var(--muted);
+}
+
+/*  RESPONSIVE DESIGN */
+@media (max-width: 900px){
+  main{
+    grid-template-columns:1fr; /* Una sola columna en pantallas pequeñas */
+    gap:12px;
+  }
+}

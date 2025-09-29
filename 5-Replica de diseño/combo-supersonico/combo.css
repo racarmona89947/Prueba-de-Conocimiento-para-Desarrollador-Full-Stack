@@ -1,0 +1,135 @@
+/* Fondo general */
+body {
+    background-image: url("assets/bg.png");
+}
+
+/* Título */
+header div {
+    background-color: #71bd27;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    width: 30%;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+/* Main dividido en dos secciones */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+}
+
+/* Secciones de imágenes */
+.ingredients, .full-plate {
+    width: 45%;
+    text-align: center;
+}
+
+.image-1 {
+    margin: 137px -10px 0px 82px;
+}
+.image-2 {
+    margin: 0px 0px 235px -60px;
+}
+.image-3 {
+    margin: 0px 0px -41px 0px;
+}
+.image-4 {
+    margin: 0px -16px 169px 76px;
+}
+.image-5 {
+    margin: 0px 0px 72px -298px;
+}
+
+.image-6 {
+    width: 500px;
+    margin: 10px 0px 0px 90px;
+}
+
+.image-7 {
+    width: 100px;
+    margin: 0px 0px 20px -438px;
+}
+
+.image-8 {
+    width: 106px;
+    margin: 0px 0px 70px -44px;;
+}
+
+.image-9 {
+    width: 140px;
+    margin: 0px 0px -5px 84px;;
+}
+
+.image-10 {
+    width: 73px;
+    margin: 0px 0px 113px -228px;;
+}
+
+.image-11 {
+    width: 75px;
+    margin: 0px 0px 46px -66px;;
+}
+
+/* Línea punteada al centro */
+.divider {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    border-left: 2px dashed white;
+    transform: translateX(-50%);
+}
+
+/* Footer con ícono abajo a la izquierda */
+footer {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
+
+footer img {
+    width: 40px; /* ajusta el tamaño */
+    height: auto;
+}
+
+h3{
+    background-color:#d65423;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    width: 40%;
+    padding: 5px;
+    margin: 20px 70px 0px 0px;
+}
+
+.progress-container {
+    width: 550px;
+    height: 20px;
+    background: #842041;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 0px 51px 0px 0px;
+} 
+
+.progress-bar {
+    height: 100%;
+    width: 70%; 
+    background: repeating-linear-gradient(
+    -45deg,
+    #d34075,
+    #d34075 10px,
+    #ffffff 10px,
+    #ffffff 20px
+    );
+    animation: moveStripes 1s linear infinite;
+}
+
